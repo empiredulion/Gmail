@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/text_user"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/image_name"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_subject"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/image_name"
+        android:text="Subject"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/image_name"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_text_view"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:text="T"
+        android:textSize="40sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_subject"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/image_name"
+        android:text="Content"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/text_subject"
+        android:layout_marginRight="10dp"
+        android:text="Time"
+        android:textSize="24sp"/>
+
+    <ImageButton
+        android:id="@+id/on_star"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_star_24"
+        android:layout_below="@id/time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
